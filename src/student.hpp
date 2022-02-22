@@ -13,5 +13,6 @@ struct Student {
 
 void display_score_list(const std::vector<Student>& scores);
 
+double get_average(const std::vector<Student>& scores);
 
 #endif /* STUDENT_HPP_ */

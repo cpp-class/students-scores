@@ -66,9 +66,11 @@ int main() {
 
 	do {
 		std::cout <<
+				"--------------------------------------------\n"
 				"1. Show the list.\n"
+				"2. Show class average score\n"
 				"0. Exit\n";
-		std::cout << "Please select the menue:";
+		std::cout << "Please select the menu:";
 		std::cin >> select;
 
 		if (select == 1)
@@ -76,6 +78,11 @@ int main() {
 			display_score_list(scores);
 		}
 
+		if (select == 2)
+		{
+			auto average = get_average(scores);
+			std::cout << "Average class score is: " << average << "\n";
+		}
 
 
 	} while(select !=0);
