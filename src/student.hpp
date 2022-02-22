@@ -17,4 +17,7 @@ double get_average(const std::vector<Student>& scores);
 
 int get_num_failed(const std::vector<Student>& scores);
 
+void increase_scores(std::vector<Student>& scores, double increase_value);
+
+
 #endif /* STUDENT_HPP_ */

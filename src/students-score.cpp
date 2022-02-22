@@ -70,6 +70,7 @@ int main() {
 				"1. Show the list.\n"
 				"2. Show class average score\n"
 				"3. Get number of failed students\n"
+				"4. Increase all scores by 2\n"
 				"0. Exit\n";
 		std::cout << "Please select the menu:";
 		std::cin >> select;
@@ -89,6 +90,11 @@ int main() {
 		{
 			auto num_failed = get_num_failed(scores);
 			std::cout << "Number of failed:" << num_failed << "\n";
+		}
+
+		if (select == 4)
+		{
+			increase_scores(scores, 2.0);
 		}
 
 
