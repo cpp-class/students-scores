@@ -69,6 +69,7 @@ int main() {
 				"--------------------------------------------\n"
 				"1. Show the list.\n"
 				"2. Show class average score\n"
+				"3. Get number of failed students\n"
 				"0. Exit\n";
 		std::cout << "Please select the menu:";
 		std::cin >> select;
@@ -82,6 +83,12 @@ int main() {
 		{
 			auto average = get_average(scores);
 			std::cout << "Average class score is: " << average << "\n";
+		}
+
+		if (select == 3)
+		{
+			auto num_failed = get_num_failed(scores);
+			std::cout << "Number of failed:" << num_failed << "\n";
 		}
 
 
