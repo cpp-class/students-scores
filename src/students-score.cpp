@@ -59,5 +59,27 @@ std::vector<Student> read_scores_file(const std::string file_name) {
 
 int main() {
 	auto scores = read_scores_file("sample_scores.txt");
-	display_score_list(scores);
+
+	std::cout << "Update student list fomr \"sample_scores.txt\"\n";
+
+	int select = 1;
+
+	do {
+		std::cout <<
+				"1. Show the list.\n"
+				"0. Exit\n";
+		std::cout << "Please select the menue:";
+		std::cin >> select;
+
+		if (select == 1)
+		{
+			display_score_list(scores);
+		}
+
+
+
+	} while(select !=0);
+
+	std::cout << "Done..\n";
+
 }
