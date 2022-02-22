@@ -66,7 +66,7 @@ int main() {
 
 	do {
 		std::cout <<
-				"--------------------------------------------\n"
+				"\n--------------------------------------------\n"
 				"1. Show the list.\n"
 				"2. Show class average score\n"
 				"3. Get number of failed students\n"
