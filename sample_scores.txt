@@ -1,0 +1,21 @@
+
+# Example for Score file
+# Score of each student should be placed on a single line with following format:
+#   FirstName LastName Score
+
+######################
+##   Sample Class   ##
+######################
+
+
+Asghar Hassani       16
+Navid  Mohammadzade  12.5
+Leyla  Hatami        14.25
+Gholi  Moradi        18.75
+
+Behnam Bani  9.5
+Vafa Khaleghi 19
+Jahan Jahnbakhsh   6
+
+
+###########################################
