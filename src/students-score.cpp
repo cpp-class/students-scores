@@ -1,15 +1,7 @@
 #include <iostream>
-#include <string>
-#include <vector>
-
+#include "student.hpp"
 #include <fstream>
 #include <sstream>
-
-struct Student {
-	std::string first_name;
-	std::string last_name;
-	double score;
-};
 
 bool line_is_comment(const std::string line) {
 	std::stringstream ss { line };
@@ -24,10 +16,6 @@ bool line_is_comment(const std::string line) {
 	}
 }
 
-void display_score_list(const std::vector<Student>& scores)
-{
-
-}
 
 
 std::vector<Student> read_scores_file(const std::string file_name) {
